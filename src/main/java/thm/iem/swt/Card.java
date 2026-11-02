@@ -10,6 +10,6 @@ public class Card {
     private String name;
     private CardType type;
     private int energyCost;
-    private String decription;
+    private String description;
     private CardEffect effect;
 }
