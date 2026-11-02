@@ -15,6 +15,6 @@ public class Actor {
     public String getName() { return name; }
     public short getID() { return ID; }
     public int getMaxHP() { return maxHP; }
-//test
+//testpush
     public int currentHP;
 }
