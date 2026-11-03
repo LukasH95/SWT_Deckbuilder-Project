@@ -1,4 +1,4 @@
-package thm.iem.swt;
+package thm.iem.swt.Cards;
 
 public class CardEffect {
 }
