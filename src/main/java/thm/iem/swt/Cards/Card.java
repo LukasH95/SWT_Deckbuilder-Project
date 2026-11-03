@@ -9,7 +9,7 @@ public class Card {
     private final int id;
     private final String name;
     private final CardType type;
-    private int energyCost; // not final as future effects may or may not reduce energy costs
+    private int energyCost; // not final as future effects may or may not reduce energy costs permanently
     private String description;
     private CardEffect[] effects;
     private int effectcount = 0;
