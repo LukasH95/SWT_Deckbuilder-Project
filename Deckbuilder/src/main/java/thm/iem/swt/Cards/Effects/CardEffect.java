@@ -6,6 +6,7 @@ public abstract class CardEffect {
 
     private Actor target;
     private int value;
+
     public CardEffect(Actor target, int value) {
         this.target = target;
         this.value = value;

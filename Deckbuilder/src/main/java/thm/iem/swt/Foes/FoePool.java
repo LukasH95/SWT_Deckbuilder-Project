@@ -1,6 +1,6 @@
 package thm.iem.swt.Foes;
 
-public class FoeCollection {
+public class FoePool {
 
     public void initFoes() {
         FoeActor Wolf = new FoeActor("Wolf", 1, 150);

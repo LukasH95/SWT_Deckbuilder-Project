@@ -8,7 +8,7 @@ public class CardEffectDamage extends CardEffect {
         super(target, value);
     }
 
-    Actor a = getTarget();
+    private final Actor a = getTarget();
 
     @Override
     public void applyEffect() {

@@ -1,5 +1,5 @@
 package thm.iem.swt.Cards.Effects;
 
-public class EffectCollection {
+public class EffectPool {
     public CardEffect test;
 }
