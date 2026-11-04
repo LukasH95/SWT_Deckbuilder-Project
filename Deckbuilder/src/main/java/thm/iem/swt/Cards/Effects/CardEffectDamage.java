@@ -12,7 +12,8 @@ public class CardEffectDamage extends CardEffect {
 
     @Override
     public void applyEffect() {
-        int newHp = max(0, a.getCurrentHp() - getValue());
-        a.setCurrentHp(newHp);
+//        int newHp = max(0, a.getCurrentHp() - getValue());
+//        a.setCurrentHp(newHp);
+        a.receiveDamage(getValue());
     }
 }

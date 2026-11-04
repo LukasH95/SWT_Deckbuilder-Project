@@ -12,7 +12,7 @@ public class CardEffectExecuteDmg extends CardEffect {
     @Override
     public void applyEffect() {
         if (a.getCurrentHp() < (getValue() / 100.0 * a.getMaxHp())) {
-            a.setCurrentHp(0);
+            a.setCurrentHp(0);      // UNBLOCKABLE!
         }
     }
 }

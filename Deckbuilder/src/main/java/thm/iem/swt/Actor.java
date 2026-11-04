@@ -2,6 +2,7 @@ package thm.iem.swt;
 
 import thm.iem.swt.StatusEffects.StatusEffect;
 import java.util.ArrayList;
+import static java.lang.Integer.max;
 
 public class Actor {
     private String name;
@@ -35,6 +36,11 @@ public class Actor {
         } else {
             this.currentHp = newHpValue;
         }
+    }
+
+    public void receiveDamage(int incomingDmg) {
+        int dmgAfterBlock = max(0, incomingDmg - block);
+        setCurrentHp(currentHp - dmgAfterBlock);
     }
 
     public void receiveBuff(StatusEffect newBuff) {

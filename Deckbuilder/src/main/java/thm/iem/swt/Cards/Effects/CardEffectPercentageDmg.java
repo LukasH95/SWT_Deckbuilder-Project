@@ -13,7 +13,8 @@ public class CardEffectPercentageDmg extends CardEffect {
     @Override
     public void applyEffect() {
         int percentDmg = (int) (a.getMaxHp() * ((float)getValue() / 100));
-        int newHp = max(0, a.getCurrentHp() - percentDmg);
-        a.setCurrentHp(newHp);
+//        int newHp = max(0, a.getCurrentHp() - percentDmg);
+//        a.setCurrentHp(newHp);
+        a. receiveDamage(percentDmg);
     }
 }
