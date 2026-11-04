@@ -1,4 +1,4 @@
-package thm.iem.swt.Cards;
+package thm.iem.swt.Cards.Effects;
 
 import thm.iem.swt.Actor;
 import static java.lang.Integer.max;

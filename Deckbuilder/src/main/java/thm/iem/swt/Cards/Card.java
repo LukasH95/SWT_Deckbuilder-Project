@@ -1,5 +1,7 @@
 package thm.iem.swt.Cards;
 
+import thm.iem.swt.Cards.Effects.CardEffect;
+
 enum CardType {
     ATTACK, DEFEND, SKILL, POWER
 }
