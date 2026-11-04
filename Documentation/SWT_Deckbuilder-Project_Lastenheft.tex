@@ -1,0 +1,100 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[ngerman]{babel}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{changepage}
+\usepackage[printonlyused,withpage]{acronym}
+%\usepackage{svg}
+
+% --------------Listings-Configuration by Gemini AI-------------- %
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codingKeyword}{rgb}{0.0, 0.0, 0.0}
+\definecolor{codingComment}{rgb}{0.4, 0.4, 0.4}
+\definecolor{codingNumbers}{rgb}{0.6, 0.6, 0.6}
+%\definecolor{codingBackground}{rgb}{0.98, 0.98, 0.98}
+\definecolor{codingBackground}{rgb}{1.0, 1.0, 1.0}
+%\definecolor{codingString}{rgb}{0.4, 0.7, 0.2}
+\definecolor{codingString}{rgb}{0.4, 0.4, 0.4}
+
+% -----------------End of Listings-Configuration----------------- %
+
+\geometry{
+    left=2.5cm,
+    right=2cm,
+    top=2cm,
+    bottom=2cm
+}
+
+\setstretch{1.15}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black
+}
+
+\begin{document}
+
+% ===================================================== %
+% Titlepage                                             %
+% ===================================================== %
+
+\begin{titlepage}
+    %\vspace*{0.2cm}
+
+    \begin{adjustwidth}{-0.25cm}{0.25cm} % TODO: title page not centered correctly
+
+        \centering
+        % THM-Logo
+        \begin{center}
+            \includegraphics[width=\textwidth]{assets/img/Logo_THM_CF_FB.png}
+        \end{center}
+
+        \vfill
+
+        {\LARGE \textbf{Deckbuilder Project}}\\[2cm]
+
+        {\large Technische Hochschule Mittelhessen}\\
+        {\large Software Engineering}\\[2cm]
+
+        {\Large \textbf{Lastenheft}}\\[0.5cm]
+
+        {\normalsize Presented by:}\\[0.5cm]
+
+        \begin{tabular}{rl}
+            {\large \textbf{Lukas Hübner}} & Matr.-Nr. 5604474 \\
+        \end{tabular}\\[0.5cm]
+
+        {\large XX.XX.2026}\\[3cm]
+
+        \begin{tabular}{rl}
+            {\large \textbf{Professor:}} & Prof. Dr. Christian Prause\\[0.25cm]
+            {\large \textbf{Module:}} & EIT-F-XXX: Softwaretechnik\\[0.25cm]
+        \end{tabular}
+
+    \end{adjustwidth}
+
+    \vfill
+\end{titlepage}
+
+\begin{itemize}
+    \item \textbf{Theoretical Foundations:} This chapter provides the necessary theoretical knowledge 
+    and concepts that underpin the project, including digital twin technology, plant growth basics, 
+    grow-box casing design, and wireless connectivity.
+    \item \textbf{System Concept \& System Design:} This chapter outlines the design requirements, 
+    system architecture, hardware and software design, and UI/UX considerations.
+\end{itemize}
+
+\end{document}
