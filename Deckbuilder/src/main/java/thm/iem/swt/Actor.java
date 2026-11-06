@@ -26,6 +26,7 @@ public class Actor {
     public int getMaxHp() { return maxHp; }
     public int getCurrentHp() { return currentHp; }
 
+    // doesnt take block into account and directly modifies currentHp within its limits
     public void setCurrentHp(int newHpValue) {
         if (newHpValue > this.maxHp) {
             this.currentHp = this.maxHp;
@@ -38,6 +39,7 @@ public class Actor {
         }
     }
 
+    // takes block into account when calculating new hp value
     public void receiveDamage(int incomingDmg) {
         int dmgAfterBlock = max(0, incomingDmg - block);
         setCurrentHp(currentHp - dmgAfterBlock);

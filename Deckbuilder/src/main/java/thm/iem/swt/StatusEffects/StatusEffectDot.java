@@ -1,7 +1,6 @@
 package thm.iem.swt.StatusEffects;
 
 import thm.iem.swt.Actor;
-
 import static java.lang.Integer.max;
 
 public class StatusEffectDot extends StatusEffect {
@@ -9,8 +8,8 @@ public class StatusEffectDot extends StatusEffect {
     private final int dmgValue;
     private int remainingDuration;
 
-    public StatusEffectDot(Actor target, int durationInRounds, int dmgValue, boolean isDebuff) {
-        super(target, durationInRounds, isDebuff);
+    public StatusEffectDot(Actor target, int durationInRounds, int dmgValue) {
+        super(target, durationInRounds, true);
         this.dmgValue = dmgValue;
         this.remainingDuration = durationInRounds;
     }
