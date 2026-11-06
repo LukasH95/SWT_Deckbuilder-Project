@@ -25,9 +25,9 @@ public class FoePool {
     }
 
     public void disposeFoe(FoeActor foe) {
-        int i, id = foe.getId();
+        int i;
         for (i = 0; i < idList.size(); i++) {
-            if (idList.get(i) == id) {
+            if (idList.get(i) == foe.getId()) {
                 idList.remove(i);
             }
         }
@@ -38,7 +38,7 @@ public class FoePool {
         FoeActor wolf = new FoeActor("Wolf", findId(), 150);
         //wolf.receiveBuff();       // hier können bestimmte gegner von beginn an mit bestimmten buffs spawnen
         //wolf.addAttackEffect();   // hier können spezifischen gegener spezifische attacken zugeordnet werden
-                                    // (letztendlich auch einfach "karteneffekte")
+                                    // (letztendlich auch einfach *karteneffekte*)
         return wolf;
     }
 
