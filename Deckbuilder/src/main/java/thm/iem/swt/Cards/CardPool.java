@@ -1,8 +1,17 @@
 package thm.iem.swt.Cards;
 
 public class CardPool {
-    public Card attack_1 = new Card(1, "Angriff", CardType.ATTACK, 2);
-    public Card defence_1 = new Card(2,"Block",CardType.DEFEND,1);
-    public Card heal_1 = new Card(3, "Heal", CardType.SKILL,1);
-    public Card attack_2 = new Card(4, "PowerAttack", CardType.ATTACK,2);
+
+    public Card createAttack_1() {
+        public Card Attack_1 = new Card(1, "Angriff", CardType.ATTACK, 1);
+        Attack_1.addEffect (weakdmg);
+        return Attack_1;
+    }
+
+    public Card createAttack_1() {
+        public Card Block_1 = new Card(1, "Block", CardType.DEFEND, 1);
+        Block_1.addEffect (weakblock);
+        return Block_1;
+    }
+
 }

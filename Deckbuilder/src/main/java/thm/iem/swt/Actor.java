@@ -45,6 +45,10 @@ public class Actor {
         setCurrentHp(currentHp - dmgAfterBlock);
     }
 
+    public void receiveBlock(int block) {
+        this.block = block;
+    }
+
     public void receiveBuff(StatusEffect newBuff) {
         this.buffs.add(newBuff);
     }
