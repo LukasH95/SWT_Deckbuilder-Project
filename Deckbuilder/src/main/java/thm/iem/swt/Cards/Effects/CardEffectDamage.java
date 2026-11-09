@@ -8,6 +8,10 @@ public class CardEffectDamage extends CardEffect {
         super(target, value);
     }
 
+    public CardEffectDamage(int value) {
+        super(value);
+    }
+
     private final Actor a = getTarget();
 
     @Override
