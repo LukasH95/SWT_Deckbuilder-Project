@@ -6,6 +6,9 @@ public class CardEffectExecuteDmg extends CardEffect {
     public CardEffectExecuteDmg(Actor target, int value) {
         super(target, value);
     }
+    public CardEffectExecuteDmg(int value) {
+        super(value);
+    }
 
     private final Actor a = getTarget();
 
