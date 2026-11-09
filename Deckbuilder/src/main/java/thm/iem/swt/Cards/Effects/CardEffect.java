@@ -12,7 +12,12 @@ public abstract class CardEffect {
         this.value = value;
     }
 
+    public CardEffect(int value) {
+        this.value = value;
+    }
+
     public Actor getTarget() { return target; }
+    public void setTarget(Actor target) { this.target = target; }
     public int getValue() { return value; }
 
     public abstract void applyEffect(); // to be overridden in child classes, to create different effects
